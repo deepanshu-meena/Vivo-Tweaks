@@ -1,6 +1,6 @@
 # Vivo Performance, Battery & Debloat Guide
 
-A community-tested collection of performance tweaks, debloating steps, and battery optimizations for **Vivo Devices**. -specific results may still vary.
+A community-tested collection of performance, battery optimizations Tips & Debloating Guide for **Vivo Devices**. -specific results may still vary.
 
 > Primarily tested on **Vivo T3 5G**.
 
