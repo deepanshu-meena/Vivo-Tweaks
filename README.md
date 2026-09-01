@@ -168,7 +168,7 @@ Disabling the following reduces background feature overhead during gaming sessio
 - Smart Sidebar
 - Split-screen shortcuts
 
-**Ultra Game Mode:** counter-intuitively, some users (including reports on Reddit/community forums) have found **better in-game performance with a game removed from Ultra Game Mode and the feature turned off entirely**, rather than left on. This isn't universal — test both states yourself. If you turn Ultra Game Mode off, you can still get DND-style call/notification silencing manually through the system **Do Not Disturb** settings instead of relying on Game Mode for it.
+**Ultra Game Mode:** counter-intuitively, some users (including reports on Reddit/community forums) have found **better in-game performance with a game removed from Ultra Game Mode and the feature turned off entirely**, rather than left on. This isn't universal — test both states yourself. If you turn Ultra Game Mode off, you can still use DND-mode for call/notification silencing manually, instead of relying on Game Mode for it.
 
 ---
 
