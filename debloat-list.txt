@@ -1,0 +1,49 @@
+# Vivo / iQOO (BBK) Debloat Starter List
+#
+# These package names are commonly reported across the Vivo/iQOO community
+# (XDA, Reddit, TechEnclave, various debloat repos) as generally safe to
+# disable or remove on FuntouchOS/OriginOS devices.
+#
+# IMPORTANT:
+# - Regional/carrier firmware varies — not every package will exist on your unit.
+# - Always pull YOUR device's real package list first:
+#     adb shell pm list packages -f > packages.txt
+# - Disable first, uninstall later, once you've confirmed nothing broke:
+#     adb shell pm disable-user --user 0 <package>
+#     adb shell pm uninstall --user 0 <package>
+# - Restore if needed:
+#     adb shell cmd package install-existing <package>
+# - This list is a starting point, not a guarantee — test in small batches.
+
+## Store / Promotional
+com.vivo.appstore
+com.vivo.website
+com.vivo.game
+com.vivo.minigamecenter
+
+## Browser / Search (if you use a third-party browser instead)
+com.vivo.browser
+
+## Account / Cloud sync (if you don't use Vivo/BBK cloud services)
+com.bbk.cloud
+com.bbk.account
+
+## Vivo Assistant / AI features (if unused)
+com.vivo.agent
+com.vivo.assistant
+
+## Refresh-rate / Game management (see README: GameWatch Fix section
+## before touching this — read the side effects first)
+com.vivo.gamewatch
+
+## Misc system utilities often safe to disable if unused
+com.vivo.smartshot
+com.vivo.weather
+
+# --------------------------------------------------------------------------
+# DO NOT remove, regardless of what you read elsewhere:
+# - com.android.systemui
+# - your active input method / keyboard package
+# - com.android.phone / telephony-related packages
+# - anything you cannot identify with confidence
+# --------------------------------------------------------------------------
