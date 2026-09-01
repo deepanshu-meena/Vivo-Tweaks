@@ -124,7 +124,7 @@ or disable it via the [App Timer 0 trick](#app-timer-0-trick-soft-freeze-system-
 | Setting | Recommendation | Why |
 |---|---|---|
 | AI Acceleration Engine | Off | In many cases, disabling it reduces AI-driven task scheduling overhead — measurably lower heat and better sustained performance for some users. Test on your unit. |
-| ART++ Turbo | Test both | Some users see better app-launch performance with it on, others get more consistent frame pacing with it off. Not a universal win either way. |
+| ART++ Turbo | Test both | Some users see better app-launch performance with it on, others get more consistent frame pacing with it off. Many Users Reported That Turning Off Ai acceleration engine & ART++ Turbo Has Decreased Heating and Increased Battery backup as well No difference in Performance at all. |
 | Extended RAM (Virtual RAM) | Off | Extends storage flash wear and adds swap latency for marginal RAM gains — turning it off tends to help both storage longevity and real-world responsiveness. |
 | Haptic Feedback | Off (optional) | Removes a small but constant CPU/vibration-motor tax on every touch interaction; matters most on longer gaming sessions. |
 
@@ -134,7 +134,7 @@ or disable it via the [App Timer 0 trick](#app-timer-0-trick-soft-freeze-system-
 
 Under **Settings → Apps → Data usage** (or per-app battery/data settings), disable **background data** for apps that don't need to phone home when closed — e.g. Compass, V-Appstore, Play Store, and similar apps with no real background use case.
 
-Why this helps: apps like the Play Store or V-Appstore only actually need network access when you open them to update/install something. Cutting their background data (with **Data Saver mode: On**) removes periodic background pings, which in turn keeps your regular network ping more stable since fewer processes are competing for radio/data access in the background.
+Why this helps: apps like the Play Store or V-Appstore, and Other system or Installed apps Uses Data In Background. Cutting their background data (with **Data Saver mode/Data Saving Mode: On**) removes periodic background pings, which in turn keeps your regular network ping more stable since fewer processes are competing for radio/data access in the background.
 
 ## UI Smoothness
 
@@ -144,7 +144,7 @@ Why this helps: apps like the Play Store or V-Appstore only actually need networ
 
 For OEM system apps that refuse to be disabled/uninstalled on newer patches, Digital Wellbeing can be repurposed as a soft-freeze:
 
-1. Open **Digital Wellbeing**.
+1. Open **Digital Wellbeing**. or **Apps -> app info -> Screen Time -> App Timer**
 2. Find the system app you want restricted, set its **App Timer to 0 minutes**.
 3. The icon turns grayscale and the app is blocked from launching.
 4. It may still run in the background — pair this with [background power restriction](#background-power-restriction) below.
@@ -153,6 +153,7 @@ For OEM system apps that refuse to be disabled/uninstalled on newer patches, Dig
 ## Background Power Restriction
 
 For apps you can't fully remove but rarely use: **Settings → Battery → Background power consumption management** (or per-app **Restrict battery usage**) — restrict background activity for non-essential system and user apps.
+OR for Installed apps just **Hold them Go To app Info -> Battery Usage -> Background Power Control**
 
 ⚠️ Skip this for messaging apps or anything you rely on for real-time notifications — restricting background activity can delay or block push notifications entirely.
 
@@ -162,8 +163,10 @@ For apps you can't fully remove but rarely use: **Settings → Battery → Backg
 
 ## Gaming Optimizations
 
-Disabling the following reduces background feature overhead during gaming sessions — test individually, keep what you notice a difference from:
-- Gestures (use standard navigation instead, while gaming)
+if u are a Gamer and just want Priorities gaming then:
+Disable All the Fancy settings & accessibilities and other stuff like:
+
+- Gestures (use standard navigation instead)
 - Smart Window
 - Smart Sidebar
 - Split-screen shortcuts
