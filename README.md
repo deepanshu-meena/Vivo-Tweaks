@@ -1,8 +1,8 @@
-# Vivo T3 5G Performance, Battery & Debloat Guide
+# Vivo Performance, Battery & Debloat Guide
 
-A community-tested collection of performance tweaks, debloating steps, and battery optimizations for the **Vivo T3 5G (Dimensity 7200)**. Most steps also apply to other **Vivo / iQOO devices running OriginOS 5/6 or FuntouchOS 14/15**, since the underlying settings and system apps are shared across the BBK/Vivo software stack — device-specific results may vary.
+A community-tested collection of performance tweaks, debloating steps, and battery optimizations for **Vivo Devices**. -specific results may still vary.
 
-> Primarily built and tested on **Vivo T3 5G**. Where a tweak is device-specific or version-limited, it's called out explicitly.
+> Primarily tested on **Vivo T3 5G**.
 
 ## Table of Contents
 - [Disclaimer](#disclaimer)
