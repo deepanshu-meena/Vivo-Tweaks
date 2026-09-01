@@ -99,11 +99,11 @@ See [`debloat-list.txt`](./debloat-list.txt) for a categorized starter list of c
 
 ---
 
-## GameWatch Fix — Unlock 120Hz for Restricted Apps
+## Fix 120Hz Not Working — Unlock 120Hz for Restricted Apps
 
-This is a fix I found through my own testing on the T3 5G and later saw corroborated independently by the Vivo community — Vivo subsequently restricted the ability to remove this app in later patches.
+This is a fix I found through my own testing on the T3 5G — Vivo subsequently restricted the ability to remove this app in later patches.
 
-**The problem:** Some games don't appear in the system's "Apps running at higher refresh rate" list at all (e.g. **MLBB Global**), so they're silently capped at 60Hz. Others show a 120Hz toggle that appears "on" but the game is still visibly capped at 60fps in practice (e.g. **BGMI**).
+**The problem:** Some games/apps don't appear in the system's "Apps running at higher refresh rate" list at all (e.g. **MLBB Global**), so they're silently capped at 60Hz. Others show a 120Hz toggle that appears "on" but the game is still visibly capped at 60fps in practice (e.g. **BGMI**).
 
 **The cause:** `com.vivo.gamewatch`, a system service that manages per-game refresh-rate profiles, was silently excluding or mismanaging certain packages.
 
@@ -113,7 +113,7 @@ adb shell pm uninstall --user 0 com.vivo.gamewatch
 ```
 or disable it via the [App Timer 0 trick](#app-timer-0-trick-soft-freeze-system-apps) if uninstall is blocked on your firmware version.
 
-**Confirmed to work on:** FuntouchOS 14, and early FuntouchOS 15 patches on some units. Vivo has since patched later builds to prevent removing/disabling this package, so results depend on your current patch level.
+**Confirmed to work on:** FuntouchOS 14, and early FuntouchOS 15 patches on some units. Vivo has since patched later builds to prevent removing/disabling this package, so results depend on your current patch level(if u can still manage to remove this in latest fos 15 or Origin6 patches feel free to contribute).
 
 **Known side effect:** once `com.vivo.gamewatch` is gone, the entire "Apps running at higher refresh rate" settings page will appear empty — this is expected, not a bug. You lose the per-app automatic profile list, but you can still manually switch the display between 60Hz/120Hz any time from the refresh rate settings.
 
