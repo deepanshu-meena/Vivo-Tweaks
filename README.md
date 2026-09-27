@@ -101,7 +101,7 @@ See [`debloat-list.txt`](./debloat-list.txt) for a categorized starter list of c
 
 ## Fix 120Hz Not Working — Unlock 120Hz for Restricted Apps
 
-This is a fix I found through my own testing on the T3 5G — Vivo subsequently restricted the ability to remove this app in later patches.
+This is a fix I found through my own testing on the Vivo T3 5G — subsequently restricted the ability to remove this app in later patches.
 
 **The problem:** Some games/apps don't appear in the system's "Apps running at higher refresh rate" list at all (e.g. **MLBB Global**), so they're silently capped at 60Hz. Others show a 120Hz toggle that appears "on" but the game is still visibly capped at 60fps in practice (e.g. **BGMI**).
 
